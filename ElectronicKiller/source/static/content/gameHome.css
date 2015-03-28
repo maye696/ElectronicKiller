@@ -1,0 +1,39 @@
+﻿.game-user-list {
+    height: 100%;
+    background-color: #99CCFF;
+    margin-right: -10px;
+    padding:20px;
+}
+
+.right {
+    height: 100%;
+    background-color: #15E58E;
+    margin-left: -10px;
+}
+
+
+.user-card {
+    background-color: #666699;
+    height:200px;
+    width:150px;
+    margin:10px;
+    border:2px solid white;
+    padding:10px;
+    color:white;
+}
+
+.game-chat {
+    height:350px;
+    background-color:white;
+    padding:5px;
+}
+.no-user {
+    background-color: #99CCFF;
+}
+
+#chatForm {
+   
+}
+#chatInput {
+    width:170px;
+}

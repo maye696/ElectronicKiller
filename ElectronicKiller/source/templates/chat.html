@@ -1,0 +1,24 @@
+﻿{% extends "layouts/layout.html" %}
+
+{% block content %}
+
+<div class="container chat">
+    <p class="bg-primary f16 p10">
+        电英杀-聊天板
+    </p>
+    <table class="table table-striped f14 p10" id="chatList">
+        <tr><td>聊天内容1</td><td>-- ys</td></tr>
+        <tr><td>聊天内容2</td><td>-- 人名</td></tr>
+    </table>
+    <form class="form-inline" id="chatForm">
+        <input type="text" class="form-control" id="chatInput"/>
+        <button type="submit"class="btn btn-primary ml10" id="submitChat">我要发言</button>
+    </form>
+</div>
+    
+{% endblock %}
+
+{% block scripts %}
+    {% load staticfiles %}
+    <script src="{% static 'myScripts/chat.js' %}"></script>
+{% endblock %}
