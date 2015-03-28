@@ -30,6 +30,9 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="ElectronicKiller\customer_config.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="source\dwebsocket\decorators.py" />
     <Compile Include="source\dwebsocket\factory.py" />
     <Compile Include="source\dwebsocket\middleware.py" />

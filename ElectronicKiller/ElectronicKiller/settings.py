@@ -3,6 +3,7 @@ Django settings for ElectronicKiller project.
 """
 
 from os import path
+
 PROJECT_ROOT = path.dirname(path.abspath(path.dirname(__file__)))
 
 DEBUG = True
@@ -17,19 +18,7 @@ ADMINS = (
 
 MANAGERS = ADMINS
 
-
-if LOCAL_DEBUG:
-    MYSQL_HOST = "127.0.0.1"
-    MYSQL_PORT = '3306'
-    MYSQL_USER = 'root'
-    MYSQL_PASS = 'sqlSQL123$%^'
-    MYSQL_DB = 'ekdb'
-else:
-    MYSQL_HOST = "w.rdc.sae.sina.com.cn"
-    MYSQL_PORT = '3307'
-    MYSQL_USER = '5xw1l35w33'
-    MYSQL_PASS = 'ljx25jwy0532imwxxjwxyk52l2m55h02ykj0m1yy'
-    MYSQL_DB = 'ekdb'
+from ElectronicKiller.customer_config import MYSQL_DB, MYSQL_USER, MYSQL_PASS, MYSQL_HOST, MYSQL_PORT
 
 DATABASES = {
     'default': {
